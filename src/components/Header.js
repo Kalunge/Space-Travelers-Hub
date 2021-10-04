@@ -1,4 +1,5 @@
-import { React, Link } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => (
   <section>
@@ -8,7 +9,7 @@ const Header = () => (
           <img src="./images/planet.png" alt="logo" />
         </li>
         <li className="nav-item">
-          <Link to="/about" className="nav-link link-dark fs-4 fw-bolder">
+          <Link to="/" className="nav-link link-dark fs-4 fw-bolder">
             Space Travellers Hub
           </Link>
         </li>
@@ -16,21 +17,21 @@ const Header = () => (
       <ul className="nav">
         <li className="nav-item">
           <u>
-            <Link to="/about" className="nav-link border-end">
+            <Link to="/" className="nav-link">
               Rockets
             </Link>
           </u>
         </li>
         <li className="nav-item">
           <u>
-            <Link to="/calculator" className="nav-link border-end">
+            <Link to="/" className="nav-link border-end">
               Mission
             </Link>
           </u>
         </li>
         <li className="nav-item">
           <u>
-            <Link to="/Quotes" className="nav-link border-end">
+            <Link to="/" className="nav-link">
               My profile
             </Link>
           </u>
