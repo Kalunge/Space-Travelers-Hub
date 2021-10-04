@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../images/planet.png';
 
 const Header = () => (
   <section>
     <div className="d-flex justify-content-between pt-3">
       <ul className="nav">
         <li className="nav-item">
-          <img src="./images/planet.png" alt="logo" />
+          <img src={logo} alt="logo" />
         </li>
         <li className="nav-item">
           <Link to="/" className="nav-link link-dark fs-4 fw-bolder">
