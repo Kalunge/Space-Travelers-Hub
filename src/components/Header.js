@@ -4,10 +4,10 @@ import logo from '../images/planet.png';
 
 const Header = () => (
   <section>
-    <div className="d-flex justify-content-between pt-3">
+    <div className="d-flex justify-content-between pt-3 align-items-center pl-3">
       <ul className="nav">
         <li className="nav-item">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className="navLogo" />
         </li>
         <li className="nav-item">
           <Link to="/" className="nav-link link-dark fs-4 fw-bolder">
