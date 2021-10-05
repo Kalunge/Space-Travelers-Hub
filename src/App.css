@@ -10,3 +10,7 @@ a,
 li {
   list-style: none;
 }
+
+.header {
+  border-bottom: solid gray 2px;
+}
