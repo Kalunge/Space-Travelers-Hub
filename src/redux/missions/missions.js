@@ -3,11 +3,16 @@ import axios from 'axios';
 const GET_MISSONS = 'spacetravel/missions/GET_MISSIONS';
 // const MISSIONS_REQUEST = 'spacetravel/missions/MISSIONS_REQUEST';
 // const MISSIONS_SUCCESS = 'spacetravel/missions/MISSIONS_SUCCESS';
+const BOOK_MISSION = 'spacetravel/missions/BOOK_MISSION';
 
 export const getMissions = () => async (dispatch) => {
   const { data } = await axios.get('https://api.spacexdata.com/v3/missions');
 
   dispatch({ type: GET_MISSONS, payload: data });
+};
+
+export const bookMission = (id) => (dispatch) => {
+  dispatch({ type: BOOK_MISSION, payload: id });
 };
 
 const initialState = [];
@@ -16,7 +21,13 @@ const missions = (state = initialState, action) => {
   switch (type) {
     case GET_MISSONS:
       return [...state, payload];
-
+    case BOOK_MISSION:
+      return state.filter((mission) => {
+        if (mission.mission_id !== payload) {
+          return mission;
+        }
+        return { ...mission, reserved: true };
+      });
     default:
       return state;
   }
