@@ -10,3 +10,17 @@ a,
 li {
   list-style: none;
 }
+
+.header {
+  border-bottom: solid gray 2px;
+}
+
+.member-btn {
+  display: inline-block;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  margin-top: 8%;
+  text-align: center;
+  padding: 0.1%;
+}
