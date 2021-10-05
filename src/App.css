@@ -1,3 +1,11 @@
 .navLogo {
   width: 45px;
 }
+
+a, .nav-link {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
