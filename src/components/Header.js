@@ -1,45 +1,45 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, BrowserRouter as Router } from 'react-router-dom';
 import logo from '../images/planet.png';
 
 const Header = () => (
-  <section>
+  <Router>
     <div className="d-flex justify-content-between pt-3 align-items-center pl-3">
       <ul className="nav">
         <li className="nav-item">
           <img src={logo} alt="logo" className="navLogo" />
         </li>
         <li className="nav-item">
-          <Link to="/" className="nav-link link-dark fs-4 fw-bolder">
+          <NavLink exact to="/" className="nav-link link-dark fs-4 fw-bolder">
             Space Travellers Hub
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <ul className="nav">
         <li className="nav-item">
           <u>
-            <Link to="/" className="nav-link">
+            <NavLink to="/" className="nav-link">
               Rockets
-            </Link>
+            </NavLink>
           </u>
         </li>
         <li className="nav-item">
           <u>
-            <Link to="/" className="nav-link border-end">
+            <NavLink to="/" className="nav-link border-end">
               Mission
-            </Link>
+            </NavLink>
           </u>
         </li>
         <li className="nav-item">
           <u>
-            <Link to="/" className="nav-link">
+            <NavLink to="/profile" className="nav-link">
               My profile
-            </Link>
+            </NavLink>
           </u>
         </li>
       </ul>
     </div>
-  </section>
+  </Router>
 );
 
 export default Header;
