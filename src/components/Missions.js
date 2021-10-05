@@ -1,10 +1,20 @@
-import React from 'react';
+/* eslint-disable operator-linebreak */
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getMissions } from '../redux/missions/missions';
 
 const Missions = () => {
-  const desc = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.facere blanditiis nesciunt suscipit.';
+  const missions = useSelector((state) => state.missions);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getMissions());
+  }, [dispatch]);
+
   return (
     <div className="mt-4 ">
       <table className="table table-bordered table-responsive">
+        git
         <thead>
           <tr>
             <th scope="col">Mission</th>
@@ -14,14 +24,23 @@ const Missions = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">Thaitom</th>
-            <td>{desc}</td>
-            <td>
-              <button type="button">NOT A MEMBER</button>
-            </td>
-            <button type="button">JOIN MISSION</button>
-          </tr>
+          {missions[0] &&
+            missions[0].map((item) => (
+              <tr key={item.mission_id}>
+                <th scope="row">{item.mission_name}</th>
+                <td>{item.description}</td>
+                <td>
+                  <button type="button" className="member-btn btn-primary">
+                    ACTIVE MEMBER
+                  </button>
+                </td>
+                <td>
+                  <button type="button" className="member-btn btn-danger">
+                    LEAVE MISSION
+                  </button>
+                </td>
+              </tr>
+            ))}
         </tbody>
       </table>
     </div>
