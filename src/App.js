@@ -13,7 +13,6 @@ function App() {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/profile" component={Profile} />
-          rockets-basic-structure
         <Route path="/rockets" component={Rockets} />
         <Route path="/missions" component={Missions} />
       </Switch>
