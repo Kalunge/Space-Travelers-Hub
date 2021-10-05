@@ -14,3 +14,8 @@ li {
 .active{
   font-weight: bolder;
  }
+
+.header {
+  border-bottom: solid gray 2px;
+}
+

@@ -5,6 +5,8 @@ import logo from '../images/planet.png';
 const Header = () => (
   <>
     <div className="d-flex justify-content-between pt-3 align-items-center p-3">
+  <div className="mb-5">
+    <div className="d-flex justify-content-between pt-3 align-items-center pl-3 mb-5">
       <ul className="nav">
         <li className="nav-item">
           <img src={logo} alt="logo" className="navLogo" />
@@ -22,18 +24,14 @@ const Header = () => (
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/" activeClassName="active" className="nav-link border-end">
-            Mission
-          </NavLink>
-        </li>
-        <li className="nav-item">
           <NavLink to="/profile" activeClassName="active" className="nav-link">
             My profile
           </NavLink>
         </li>
       </ul>
     </div>
-  </>
+    <div className="header">{}</div>
+  </div>
 );
 
 export default Header;
