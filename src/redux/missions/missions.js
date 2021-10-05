@@ -1,5 +1,5 @@
 import axios from 'axios';
-/* eslint-disable */
+
 const GET_MISSONS = 'spacetravel/missions/GET_MISSIONS';
 // const MISSIONS_REQUEST = 'spacetravel/missions/MISSIONS_REQUEST';
 // const MISSIONS_SUCCESS = 'spacetravel/missions/MISSIONS_SUCCESS';
@@ -30,7 +30,9 @@ export const leaveMission = (payload) => (dispatch) => {
   dispatch({ type: LEAVE_MISSION, payload });
 };
 
-const initialState = { missions: [] };
+const initialState = {
+  missions: [],
+};
 const missions = (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {

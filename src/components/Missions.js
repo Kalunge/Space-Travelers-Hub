@@ -9,6 +9,8 @@ import {
 
 const Missions = () => {
   const { missions } = useSelector((state) => state.missions);
+  console.log(missions);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
