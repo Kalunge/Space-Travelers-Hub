@@ -1,9 +1,9 @@
 import React from 'react';
-import { NavLink, BrowserRouter as Router } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../images/planet.png';
 
 const Header = () => (
-  <Router>
+  <>
     <div className="d-flex justify-content-between pt-3 align-items-center pl-3">
       <ul className="nav">
         <li className="nav-item">
@@ -39,7 +39,7 @@ const Header = () => (
         </li>
       </ul>
     </div>
-  </Router>
+  </>
 );
 
 export default Header;
