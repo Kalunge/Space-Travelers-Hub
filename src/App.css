@@ -24,3 +24,27 @@ li {
   text-align: center;
   padding: 0.1%;
 }
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.missions-profile {
+  margin-left: 5%;
+}
+
+.rockets-profile {
+  margin-right: 10%;
+}
+
+.profile p {
+  border: solid 1px gray;
+  padding: 5%;
+  width: 570px;
+  margin-right: 15%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
