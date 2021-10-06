@@ -7,9 +7,9 @@ const Rockets = () => {
     <div>
       {rockets.map((rocket) => (
         <div key={rocket.rocket_id}>
-          {rocket.rocket_name }
-          {rocket.description }
-          {rocket.flickr_images }
+          <p>{rocket.rocket_name}</p>
+          <p>{rocket.description}</p>
+          <img src={rocket.flickr_images} alt="rocket_images" />
         </div>
       ))}
     </div>
