@@ -9,7 +9,6 @@ import {
 
 const Missions = () => {
   const { missions } = useSelector((state) => state.missions);
-  console.log(missions);
 
   const dispatch = useDispatch();
 
@@ -27,7 +26,7 @@ const Missions = () => {
 
   return (
     <div className="mt-4 ">
-      <table className="table table-bordered table-responsive">
+      <table className="table table-bordered table-responsive table-striped">
         <thead>
           <tr>
             <th scope="col">Mission</th>
