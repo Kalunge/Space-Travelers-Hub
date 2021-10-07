@@ -13,6 +13,6 @@ describe('snapshot test for Missions Component', () => {
         </Provider>,
       )
       .toJSON();
-    expect(tree).toMatchSnapshot('Description');
+    expect(tree).toMatchSnapshot();
   });
 });

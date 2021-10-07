@@ -13,6 +13,6 @@ describe('snapshot test for Profile Component', () => {
         </Provider>,
       )
       .toJSON();
-    expect(tree).toMatchSnapshot('My Rockets');
+    expect(tree).toMatchSnapshot();
   });
 });

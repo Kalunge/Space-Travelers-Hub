@@ -12,13 +12,6 @@ describe('snapshot test for Header Component', () => {
         </BrowserRouter>,
       )
       .toJSON();
-    expect(tree).toMatchSnapshot('Rockets');
+    expect(tree).toMatchSnapshot();
   });
 });
-
-// describe('simulate user event', () => {
-//   test('click', () => {
-//     render(<Calculator />);
-//     expect(userEvent.click(screen.getByTestId('divide'))).toHaveBeenCalled;
-//   });
-// });

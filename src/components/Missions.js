@@ -6,6 +6,7 @@ import {
   getMissions,
   leaveMission,
 } from '../redux/missions/missions';
+import Mission from './Mission';
 
 const Missions = () => {
   const { missions } = useSelector((state) => state.missions);
@@ -38,50 +39,14 @@ const Missions = () => {
           </tr>
         </thead>
         <tbody>
-          {missions &&
-            missions.map((item) => (
-              <tr key={item.id}>
-                <th scope="row">{item.name}</th>
-                <td>{item.description}</td>
-                {item.reserved ? (
-                  <>
-                    <td>
-                      <span className="badge bg-primary mission-badge">
-                        ACTIVE MEMBER
-                      </span>
-                    </td>
-                    <td>
-                      <button
-                        type="button"
-                        className="member-btn btn-danger"
-                        data-testid="leave"
-                        onClick={() => leaveMissionHandler(item.id)}
-                      >
-                        LEAVE MISSION
-                      </button>
-                    </td>
-                  </>
-                ) : (
-                  <>
-                    <td>
-                      <span className="badge bg-dark mission-badge">
-                        NOT A MEMBER
-                      </span>
-                    </td>
-                    <td>
-                      <button
-                        onClick={() => joinMembershipHandler(item.id)}
-                        type="button"
-                        className="member-btn btn-light"
-                        data-testid="join"
-                      >
-                        JOIN MISSION
-                      </button>
-                    </td>
-                  </>
-                )}
-              </tr>
-            ))}
+          {missions.map((mission) => (
+            <Mission
+              key={mission.id}
+              mission={mission}
+              leaveMissionHandler={leaveMissionHandler}
+              joinMembershipHandler={joinMembershipHandler}
+            />
+          ))}
         </tbody>
       </table>
     </div>

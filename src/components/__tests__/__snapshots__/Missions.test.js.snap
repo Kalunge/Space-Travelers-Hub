@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot test for Missions Component renders correctly: Description 1`] = `
+exports[`snapshot test for Missions Component renders correctly 1`] = `
 <div
   className="mt-4 "
 >

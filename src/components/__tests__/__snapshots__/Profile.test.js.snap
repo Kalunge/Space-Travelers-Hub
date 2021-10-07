@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot test for Profile Component renders correctly: My Rockets 1`] = `
+exports[`snapshot test for Profile Component renders correctly 1`] = `
 <div
   className="profile"
 >

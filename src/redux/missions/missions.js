@@ -1,8 +1,6 @@
 import axios from 'axios';
 
 const GET_MISSONS = 'spacetravel/missions/GET_MISSIONS';
-// const MISSIONS_REQUEST = 'spacetravel/missions/MISSIONS_REQUEST';
-// const MISSIONS_SUCCESS = 'spacetravel/missions/MISSIONS_SUCCESS';
 const BOOK_MISSION = 'spacetravel/missions/BOOK_MISSION';
 const LEAVE_MISSION = 'spacetravel/missions/LEAVE_MISSION';
 
@@ -22,13 +20,15 @@ export const getMissions = () => async (dispatch) => {
   dispatch({ type: GET_MISSONS, payload: result });
 };
 
-export const bookMission = (payload) => (dispatch) => {
-  dispatch({ type: BOOK_MISSION, payload });
-};
+export const bookMission = (id) => ({
+  type: BOOK_MISSION,
+  payload: id,
+});
 
-export const leaveMission = (payload) => (dispatch) => {
-  dispatch({ type: LEAVE_MISSION, payload });
-};
+export const leaveMission = (id) => ({
+  type: LEAVE_MISSION,
+  payload: id,
+});
 
 const initialState = {
   missions: [],

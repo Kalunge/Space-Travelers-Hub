@@ -26,13 +26,15 @@ export const getRockets = () => async (dispatch) => {
   dispatch(fetchRockets(rockets));
 };
 
-export const reserveRocket = (id) => async (dispatch) => {
-  dispatch({ type: RESERVE_ROCKET, payload: id });
-};
+export const reserveRocket = (id) => ({
+  type: RESERVE_ROCKET,
+  payload: id,
+});
 
-export const cancelRocket = (id) => async (dispatch) => {
-  dispatch({ type: CANCEL_ROCKET_RESERVATION, payload: id });
-};
+export const cancelRocket = (id) => ({
+  type: CANCEL_ROCKET_RESERVATION,
+  payload: id,
+});
 
 const initialState = { rockets: [] };
 const rocketsReducers = (state = initialState, action) => {
