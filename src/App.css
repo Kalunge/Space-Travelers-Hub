@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+.navLogo {
+  width: 45px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a,
+.nav-link {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.active {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.header {
+  border-bottom: solid gray 2px;
+}
+
+.member-btn {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  margin-top: 30%;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  padding: 0.1%;
 }
 
-.App-link {
-  color: #61dafb;
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.missions-profile {
+  margin-left: 5%;
+  margin-right: 2%;
+}
+
+.rockets-profile {
+  margin-right: 10%;
+  margin-left: 2%;
+}
+
+.profile p {
+  border: solid 1px gray;
+  padding: 5%;
+  width: 570px;
+  margin-right: 15%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2%;
+}
+
+.img-rockets {
+  width: 200px;
+  height: 200px;
+}
+
+.missions {
+  border-right: gray solid 3px;
+}
+
+.boorder {
+  border-bottom: solid 1px gray;
+}
+
+.mission-badge {
+  margin-top: 45%;
 }

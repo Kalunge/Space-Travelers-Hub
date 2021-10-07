@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test for Header Component renders correctly: Rockets 1`] = `
+<div
+  className="d-flex justify-content-between pt-3 align-items-center pl-3 mb-5"
+>
+  <ul
+    className="nav"
+  >
+    <li
+      className="nav-item"
+    >
+      <img
+        alt="logo"
+        className="navLogo"
+        src="planet.png"
+      />
+    </li>
+    <li
+      className="nav-item"
+    >
+      <a
+        aria-current="page"
+        className="nav-link link-dark fs-4 fw-bolder active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Space Travellers Hub
+      </a>
+    </li>
+  </ul>
+  <ul
+    className="nav"
+  >
+    <li
+      className="nav-item"
+    >
+      <a
+        aria-current="page"
+        className="nav-link active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Rockets
+      </a>
+    </li>
+    <li
+      className="nav-item"
+    >
+      <a
+        aria-current={null}
+        className="nav-link"
+        href="/missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+    </li>
+    <li
+      className="nav-item"
+    >
+      <a
+        aria-current={null}
+        className="nav-link"
+        href="/profile"
+        onClick={[Function]}
+      >
+        My profile
+      </a>
+    </li>
+  </ul>
+</div>
+`;
