@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import { cancelRocket, reserveRocket } from '../redux/rockets/rockets';
 
 const SingleRockets = ({ rocket }) => {
@@ -42,6 +42,16 @@ const SingleRockets = ({ rocket }) => {
       </div>
     </div>
   );
+};
+
+SingleRockets.propTypes = {
+  rocket: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    reserved: PropTypes.bool.isRequired,
+  }).isRequired,
 };
 
 export default SingleRockets;
