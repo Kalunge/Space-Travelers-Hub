@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Mission = ({ mission, leaveMissionHandler, joinMembershipHandler }) => {
-  const { id, name, description, reserved } = mission;
+  const {
+    id, name, description, reserved,
+  } = mission;
 
   return (
     <>
