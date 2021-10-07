@@ -11,7 +11,7 @@ const Rockets = () => {
     if (!rockets.length) {
       dispatch(getRockets());
     }
-  }, [dispatch]);
+  }, [dispatch, rockets]);
   return (
     <div>
       {rockets.map((rocket) => (
