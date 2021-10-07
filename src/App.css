@@ -38,10 +38,12 @@ li {
 
 .missions-profile {
   margin-left: 5%;
+  margin-right: 2%;
 }
 
 .rockets-profile {
   margin-right: 10%;
+  margin-left: 2%;
 }
 
 .profile p {
@@ -51,4 +53,5 @@ li {
   margin-right: 15%;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 2%;
 }
