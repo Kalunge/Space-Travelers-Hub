@@ -46,9 +46,7 @@ const Missions = () => {
                 {item.reserved ? (
                   <>
                     <td>
-                      <button type="button" className="member-btn btn-primary">
-                        ACTIVE MEMBER
-                      </button>
+                      <span className="badge bg-primary">ACTIVE MEMBER</span>
                     </td>
                     <td>
                       <button
@@ -64,9 +62,7 @@ const Missions = () => {
                 ) : (
                   <>
                     <td>
-                      <button type="button" className="member-btn btn-dark">
-                        NOT A MEMBER
-                      </button>
+                      <span className="badge bg-dark">NOT A MEMBER</span>
                     </td>
                     <td>
                       <button
