@@ -42,12 +42,13 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 ## Author
 
-👤 **Kalunge**
+##### 👤 **Kalunge**
 
 - GitHub: [@kalunge](https://github.com/kalunge)
 - Twitter: [@kalunge](https://twitter.com/titus_muthomi)
 - LinkedIn: [kalunge](https://linkedin.com/in/titus_muthomi)
-👩🏿‍🏫 **Priscilla**
+  
+#### 👤 **Priscilla**
 
 - Github: [@githubhandle](https://github.com/prolajumokeoni)
 - Twitter: [@twitterhandle](https://twitter.com/prolajumokeoni)
@@ -55,7 +56,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## :handshake: Contributing
 
-Feel free to check the [issues page](https://github.com/Kalunge/javascriptcapstone/issues)
+Feel free to check the [issues page](https://github.com/Kalunge/Space-Travelers-Hub/issues)
 
 ## Show your support
 
