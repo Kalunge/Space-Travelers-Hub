@@ -10,7 +10,12 @@ const Header = () => (
           <img src={logo} alt="logo" className="navLogo" />
         </li>
         <li className="nav-item">
-          <NavLink exact to="/" activeClassName="active" className="nav-link link-dark fs-4 fw-bolder">
+          <NavLink
+            exact
+            to="/"
+            activeClassName="active"
+            className="nav-link link-dark fs-4 fw-bolder"
+          >
             Space Travellers Hub
           </NavLink>
         </li>

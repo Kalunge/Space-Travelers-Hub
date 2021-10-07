@@ -52,9 +52,10 @@ const Missions = () => {
                     </td>
                     <td>
                       <button
-                        onClick={() => leaveMissionHandler(item.id)}
                         type="button"
                         className="member-btn btn-danger"
+                        data-testid="leave"
+                        onClick={() => leaveMissionHandler(item.id)}
                       >
                         LEAVE MISSION
                       </button>
@@ -72,6 +73,7 @@ const Missions = () => {
                         onClick={() => joinMembershipHandler(item.id)}
                         type="button"
                         className="member-btn btn-light"
+                        data-testid="join"
                       >
                         JOIN MISSION
                       </button>

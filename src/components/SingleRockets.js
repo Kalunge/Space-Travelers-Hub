@@ -1,16 +1,9 @@
 /* eslint-disable react/prop-types */
-import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import {
-  cancelRocket,
-  getRockets,
-  reserveRocket,
-} from '../redux/rockets/rockets';
+import { cancelRocket, reserveRocket } from '../redux/rockets/rockets';
 
 const SingleRockets = ({ rocket }) => {
   const dispatch = useDispatch();
-
-
 
   const handleReservation = (id) => {
     dispatch(reserveRocket(id));
