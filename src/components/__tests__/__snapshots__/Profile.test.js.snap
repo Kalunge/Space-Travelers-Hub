@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test for Profile Component renders correctly 1`] = `
+<div
+  className="profile"
+>
+  <div
+    className="missions-profile"
+  >
+    <h3>
+      My Missions
+    </h3>
+  </div>
+  <div
+    className="rockets-profile ml-5"
+  >
+    <h3>
+      My Rockets
+    </h3>
+  </div>
+</div>
+`;

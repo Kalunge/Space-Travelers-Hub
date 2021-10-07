@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test for Missions Component renders correctly 1`] = `
+<div
+  className="mt-4 "
+>
+  <table
+    className="table table-bordered table-responsive table-striped"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          Mission
+        </th>
+        <th
+          scope="col"
+        >
+          Description
+        </th>
+        <th
+          scope="col"
+        >
+          status
+        </th>
+        <th
+          scope="col"
+        />
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
