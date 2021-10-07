@@ -6,14 +6,6 @@ li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
-.nav-link {
-  text-decoration: none;
-}
-
 .underline {
   text-decoration: underline !important;
   font-weight: bolder;
