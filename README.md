@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# Space-Travellers-Hub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Worked with the real live data from the SpaceX API. Our task was to build a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.
+The Space Travelers' Hub consists of Rockets, Missions, and the My Profile section.
+### live demo
+- [netlify](https://hungry-fermi-643806.netlify.app/)
+
+![Untitled design (20)](https://user-images.githubusercontent.com/69638013/136389071-42916a5d-633e-412e-87fa-43a84446953e.png)
+
+
+This project was built using:
+- React
+- Javascript
+- Html5
+- Css3
 
 ## Available Scripts
 
@@ -28,43 +40,32 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Author
 
-### `npm run eject`
+##### 👤 **Kalunge**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- GitHub: [@kalunge](https://github.com/kalunge)
+- Twitter: [@kalunge](https://twitter.com/titus_muthomi)
+- LinkedIn: [kalunge](https://linkedin.com/in/titus_muthomi)
+  
+#### 👤 **Priscilla**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Github: [@githubhandle](https://github.com/prolajumokeoni)
+- Twitter: [@twitterhandle](https://twitter.com/prolajumokeoni)
+- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/olajumoke-priscilla-oni-44a48b162/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## :handshake: Contributing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Feel free to check the [issues page](https://github.com/Kalunge/Space-Travelers-Hub/issues)
 
-## Learn More
+## Show your support
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Give a :star: if you like this project!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgments
 
-### Code Splitting
+- Thanks to everyone who will get time to check this code especially to code reviewers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 License
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
