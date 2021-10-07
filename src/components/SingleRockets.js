@@ -18,7 +18,7 @@ const SingleRockets = ({ rocket }) => {
         <h3>{rocket.name}</h3>
         <p>
           {rocket.reserved && (
-            <span className="badge bg-secondary">Reserved</span>
+            <span className="badge bg-primary">Reserved</span>
           )}
           {rocket.description}
         </p>

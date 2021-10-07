@@ -60,3 +60,15 @@ li {
   width: 200px;
   height: 200px;
 }
+
+.missions {
+  border-right: gray solid 3px;
+}
+
+.boorder {
+  border-bottom: solid 1px gray;
+}
+
+.badge {
+  margin-top: 45%;
+}

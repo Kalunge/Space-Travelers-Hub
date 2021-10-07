@@ -10,7 +10,12 @@ const Header = () => (
           <img src={logo} alt="logo" className="navLogo" />
         </li>
         <li className="nav-item">
-          <NavLink exact to="/" activeClassName="active" className="nav-link link-dark fs-4 fw-bolder">
+          <NavLink
+            exact
+            to="/"
+            activeClassName="active"
+            className="nav-link link-dark fs-4 fw-bolder"
+          >
             Space Travellers Hub
           </NavLink>
         </li>
@@ -22,7 +27,11 @@ const Header = () => (
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/missions" activeClassName="active" className="nav-link">
+          <NavLink
+            to="/missions"
+            activeClassName="active"
+            className="nav-link missions"
+          >
             Missions
           </NavLink>
         </li>
@@ -33,6 +42,7 @@ const Header = () => (
         </li>
       </ul>
     </div>
+    <div className="boorder mb-2">{}</div>
   </>
 );
 
