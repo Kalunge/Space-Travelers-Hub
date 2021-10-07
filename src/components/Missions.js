@@ -13,8 +13,10 @@ const Missions = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getMissions());
-  }, [dispatch]);
+    if (!missions.length) {
+      dispatch(getMissions());
+    }
+  }, [dispatch, missions]);
 
   const joinMembershipHandler = (id) => {
     dispatch(bookMission(id));
