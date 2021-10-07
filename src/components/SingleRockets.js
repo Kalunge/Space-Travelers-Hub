@@ -1,9 +1,7 @@
 /* eslint-disable react/prop-types */
-import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import {
   cancelRocket,
-  getRockets,
   reserveRocket,
 } from '../redux/rockets/rockets';
 
@@ -20,15 +18,16 @@ const SingleRockets = ({ rocket }) => {
     dispatch(cancelRocket(id));
   };
   return (
-    <div key={rocket.id}>
-      <p>{rocket.name}</p>
+    <div className="d-flex p-3 w-75" key={rocket.id}>
+      <img className="img-rockets" src={rocket.image} alt="rocket_images" />
+      <div className="p-3">
+      <h3>{rocket.name}</h3>
       <p>
         {rocket.reserved && (
           <span className="badge bg-secondary">Reserved</span>
         )}
         {rocket.description}
       </p>
-      <img src={rocket.image} alt="rocket_images" />
       {rocket.reserved ? (
         <button
           type="button"
@@ -46,6 +45,7 @@ const SingleRockets = ({ rocket }) => {
           Reserve Rocket
         </button>
       )}
+      </div>
     </div>
   );
 };
