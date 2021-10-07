@@ -6,9 +6,8 @@ li {
   list-style: none;
 }
 
-.active {
-  font-weight: bolder;
-  text-decoration: underline;
+.underline {
+  border-bottom-width: 2px;
 }
 
 .header {
