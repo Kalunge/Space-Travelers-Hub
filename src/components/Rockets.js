@@ -1,16 +1,14 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import SingleRockets from './SingleRockets';
 
 const Rockets = () => {
   const rockets = useSelector((state) => state.rockets);
+  console.log(rockets.rockets)
   return (
     <div>
-      {rockets.map((rocket) => (
-        <div key={rocket.rocket_id}>
-          <p>{rocket.rocket_name}</p>
-          <p>{rocket.description}</p>
-          <img src={rocket.flickr_images} alt="rocket_images" />
-        </div>
+      {rockets.rockets.map((rocket) => (
+        <SingleRockets key={rocket.id} rocket={rocket} />
       ))}
     </div>
   );
