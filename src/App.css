@@ -6,8 +6,17 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
 .underline {
-  border-bottom-width: 2px;
+  text-decoration: underline !important;
+  font-weight: bolder;
 }
 
 .header {

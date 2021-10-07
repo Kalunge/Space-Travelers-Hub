@@ -22,7 +22,12 @@ const Header = () => (
       </ul>
       <ul className="nav">
         <li className="nav-item">
-          <NavLink to="/" activeClassName="underline" className="nav-link">
+          <NavLink
+            to="/"
+            activeClassName="underline"
+            className="nav-link"
+            exact
+          >
             Rockets
           </NavLink>
         </li>
@@ -36,7 +41,11 @@ const Header = () => (
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/profile" activeClassName="underline" className="nav-link">
+          <NavLink
+            to="/profile"
+            activeClassName="underline"
+            className="nav-link"
+          >
             My profile
           </NavLink>
         </li>
